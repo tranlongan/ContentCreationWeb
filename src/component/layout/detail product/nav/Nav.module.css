@@ -1,0 +1,21 @@
+.nav {
+    margin-top: 86px;
+    list-style: none;
+    display: flex;
+    padding: 16px 0;
+}
+
+.nav li {
+    padding: 4px 2px 4px 2px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.nav li:first-child {
+    padding-left: 0;
+}
+
+.nav li i {
+    padding: 0 8px;
+}

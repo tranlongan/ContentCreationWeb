@@ -1,0 +1,30 @@
+.container {
+    width: 100%;
+    height: auto;
+    margin: 120px 0 40px 0;
+    position: relative;
+    background-color: rgba(204, 199, 194, 0.4);
+    padding: 16px 32px;
+}
+
+.navLink {
+    list-style: none;
+    display: flex;
+    font-size: 2.1rem;
+    font-weight: 500;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.navLink li {
+    margin-right: 16px;
+    cursor: pointer;
+    padding: 8px 8px;
+}
+
+.navLink li.active {
+    border-bottom: 5px solid #f85555;
+}
+
+

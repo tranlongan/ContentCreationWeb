@@ -1,0 +1,46 @@
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 8px 0;
+    margin: 16px 0;
+}
+
+.title label {
+    padding-left: 8px;
+}
+
+.list {
+    list-style: none;
+    padding-left: 14px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.list li {
+    cursor: pointer;
+    padding: 8px 0;
+    position: relative;
+}
+
+.list li.active {
+    color: #f85555;
+    font-weight: 500;
+}
+
+.list li.active::before {
+    content: "";
+    position: absolute;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 8px solid #f85555;
+    left: -8%;
+    top: 35%;
+}
+
+.list li:hover {
+    color: #f85555;
+}
+
+

@@ -1,0 +1,143 @@
+.content {
+    margin-top: 16px;
+    margin-bottom: 56px;
+}
+
+.card {
+    position: relative;
+    /*box-shadow: rgba(126, 99, 59, 0.2) 0px 0px 0px 1px inset, rgba(126, 99, 59, 0.9) 0px 0px 0px 1px;*/
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border: 1px solid #7e633b;
+    width: 100%;
+    height: 332px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.2s;
+    overflow: hidden;
+    margin: 8px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.card:hover .footer {
+    height: 104px;
+}
+
+.nameUser {
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    z-index: 1;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: fit-content;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    transition: box-shadow 0.5s, top 0.5s;
+}
+
+.card:hover .nameUser {
+    top: 24px;
+    box-shadow: #04beec 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px;
+}
+
+.header {
+    width: 100%;
+    height: 320px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.coating {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.illustration {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 35%;
+}
+
+.footer {
+    border-top: 1px solid #7e633b;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(166, 255, 255, 1);
+    transition: height 0.5s;
+    height: 72px;
+    box-sizing: border-box;
+}
+
+.footer img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: rgba(126, 99, 59, 0.2) 0px 0px 0px 2px inset, rgba(126, 99, 59, 0.9) 0px 0px 0px 2px;
+    position: absolute;
+    right: 40%;
+    left: 40%;
+    top: -21px;
+    cursor: pointer;
+}
+
+.infoOfPost {
+    width: 100%;
+    height: 72px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #7e633b;
+}
+
+.titlePost {
+    padding: 32px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+    text-align: center;
+    color: #7e633b;
+    font-weight: 500;
+}
+
+.tags {
+
+}
+
+.view {
+    display: flex;
+    width: 100%;
+    height: 32px;
+    align-items: center;
+    justify-content: space-around;
+    color: #7e633b;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-color: rgba(190, 255, 255, 1);
+}
+
+.iconView {
+    position: relative;
+    margin-left: 2px;
+}
+
+.iconView i {
+    width: 8px;
+}
+
+.view:hover {
+
+}
+
+
+

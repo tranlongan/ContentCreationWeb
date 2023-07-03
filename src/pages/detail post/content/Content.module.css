@@ -1,0 +1,375 @@
+.card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    padding: 32px 24px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.datePost {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.date {
+    margin-left: 2px;
+}
+
+.description {
+    position: relative;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 3.3rem;
+    margin-bottom: 16px;
+}
+
+.description:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.listBtn {
+    position: relative;
+    padding: 8px 0;
+    font-size: 2rem;
+    color: #84dae6;
+    display: flex;
+    justify-content: right;
+    box-sizing: border-box;
+}
+
+.numberOfLikes {
+    font-size: 1.2rem;
+    color: #000;
+    padding-top: 4px;
+}
+
+.listBtn::before {
+    position: absolute;
+    height: 35px;
+    width: 49%;
+    content: "";
+    top: 0;
+    left: 0;
+    border-top: 2px solid #f85555;
+    border-right: 3px solid #f85555;
+    transform: skew(45deg);
+    z-index: -1;
+}
+
+.listBtn::after {
+    position: absolute;
+    height: 35px;
+    width: 49%;
+    content: '';
+    bottom: 0;
+    right: 0;
+    border-bottom: 2px solid #f85555;
+    border-left: 3px solid #f85555;
+    transform: skew(45deg);
+    z-index: -1;
+}
+
+.listBtn i {
+    cursor: pointer;
+}
+
+.listBtn i:hover {
+    color: #04beec;
+}
+
+.listBtn i.numberOfLikes:hover {
+    color: #000;
+}
+
+.listBtn i + i + i {
+    margin-left: 8px;
+}
+
+.tags {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags div {
+    border: 1px solid #00FFFF;
+    margin-right: 4px;
+    min-width: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: rgba(164, 255, 255, 0.7);
+    border-radius: 4px;
+    color: #000;
+}
+
+.tags div:hover {
+    background-color: rgba(164, 255, 255, 0.3);
+}
+
+.footer {
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.imgPost {
+    width: 100%;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 8px 0 16px 4px;
+    margin-bottom: 16px;
+    line-height: 2.1rem;
+    position: relative;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    display: block;
+    height: 4px;
+    background-color: #f85555;
+    bottom: 3%;
+}
+
+.categories {
+}
+
+.cardCategory {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 4px 0;
+    margin: 4px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+
+.cardCategory img {
+    width: 10%;
+}
+
+.infoCategory {
+    display: inline-flex;
+    align-items: center;
+}
+
+.nameCategory {
+    margin-left: 8px;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.btnViewCategory button {
+    background-color: #99FFFF;
+}
+
+.btnViewCategory button:hover {
+    background-color: #00FFFF;
+}
+
+.titleProduct {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.widget {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.viewAllProducts {
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: #f85555;
+}
+
+.titleProduct:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    display: block;
+    height: 4px;
+    background-color: #f85555;
+    bottom: -100%;
+}
+
+.products {
+    margin: 16px 0;
+}
+
+.listProduct {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardProduct {
+    width: 24%;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 16px;
+    margin: 4px 0;
+}
+
+.coating {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nameProduct {
+    position: absolute;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+}
+
+.coating:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.coating:hover .nameProduct {
+    animation: pushUp ease-in-out 0.2s forwards;
+}
+
+@keyframes pushUp {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-45%);
+    }
+}
+
+.comments {
+
+}
+
+.cardComment {
+    margin: 8px 0;
+    padding: 8px 0 8px 16px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.infoCommentator {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+
+.infoCommentator img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    flex-shrink: 0;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.nameAndDate {
+    margin-left: 4px;
+}
+
+.nameUser {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.nameUser:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.dateComment {
+    font-size: 1.2rem;
+}
+
+.commentContent {
+    margin-left: 54px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 8px 0;
+}
+
+.btnReply {
+    width: 5%;
+    margin-left: 54px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btnReply:hover {
+    text-decoration: underline;
+    color: #f85555;
+}
+
+.viewMore {
+    font-weight: 700;
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.viewMore:hover {
+    text-decoration: underline;
+    color: #f85555;
+}
+
+.reply {
+    display: flex;
+}
+
+.reply img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.inputReply {
+    width: 100%;
+}
+
+.inputReply input {
+    width: 100%;
+    height: 55px;
+    border: 1px solid silver;
+}

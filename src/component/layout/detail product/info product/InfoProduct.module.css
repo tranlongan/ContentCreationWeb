@@ -1,0 +1,57 @@
+.infoProduct {
+    position: relative;
+
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.detail {
+
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 8px 0;
+}
+
+.card label {
+    color: gray;
+    min-width: 180px;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+}
+
+.nav li {
+    padding: 4px 2px 4px 2px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: #04beec;
+}
+
+.nav li i {
+    color: black;
+}
+
+.nav li:first-child {
+    padding-left: 0;
+}
+
+.nav li i {
+    padding: 0 8px;
+}
+
+.trademark {
+    cursor: pointer;
+    color: #04beec;
+}
+

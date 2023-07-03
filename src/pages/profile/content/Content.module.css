@@ -1,0 +1,105 @@
+.cardArticles {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 4px;
+    margin: 4px 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cardArticles:hover {
+    animation: dropShadow linear 0.3s forwards;
+}
+
+@keyframes dropShadow {
+    from {
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+    to {
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    }
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header img {
+    width: 100%;
+    height: 309px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.infoArticles {
+    padding: 0 8px;
+}
+
+.title {
+    width: fit-content;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 4px 0;
+}
+
+.title:hover {
+    text-decoration: underline;
+    color: #f85555;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px 0;
+}
+
+.tags div {
+    border: 1px solid #00FFFF;
+    margin-right: 4px;
+    min-width: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: rgba(164, 255, 255, 0.7);
+    border-radius: 4px;
+}
+
+.tags div:hover {
+    background-color: rgba(164, 255, 255, 0.3);
+}
+
+.footer {
+    /*position: relative;*/
+}
+
+.like {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    float: right;
+    padding: 8px;
+}
+
+.like i {
+    margin-right: 4px;
+}
+
+.like i:first-child {
+    color: #00FFFF;
+}
+
+.numberOfLikes {
+
+}
+
+.openLink {
+    cursor: pointer;
+}
+
+.openLink:hover {
+    text-decoration: underline;
+    color: #f85555;
+}
+

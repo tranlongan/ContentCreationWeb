@@ -1,0 +1,159 @@
+.divBorder {
+    position: relative;
+    margin-top: 56px;
+}
+
+.introduceYourself {
+    position: relative;
+    width: inherit;
+    height: 550px;
+    /*background-position: 50% 50%;*/
+    background-color: rgba(134, 255, 255, 0.3);
+}
+
+.review {
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    right: 10.5%;
+    top: 12%;
+    left: 10.5%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.review::before {
+    content: "";
+    position: absolute;
+    top: -2%;
+    right: 1%;
+    bottom: -2%;
+    left: 1%;
+    background-color: #7e633b;
+    clip-path: polygon(
+            0 5%,
+            0 100%,
+            0.10% 100%,
+            0.10% 5%,
+            5% 0.2%,
+            100% 0.2%,
+            100% 0,
+            5% 0
+    );
+}
+
+.review::after {
+    content: "";
+    position: absolute;
+    top: -2%;
+    right: 1%;
+    bottom: -2%;
+    left: 1%;
+    background-color: #7e633b;
+    clip-path: polygon(
+            100% 0,
+            100% 94.65%,
+            95% 100%,
+            0 100%,
+            0 99.85%,
+            95% 99.8%,
+            99.9% 94.5%,
+            99.9% 0
+    );
+}
+
+.coating {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.infoUser {
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+    margin: 32px 0;
+    padding: 0 32px;
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+}
+
+.avatar {
+    min-width: 220px;
+    height: 220px;
+    cursor: pointer;
+}
+
+.infoUser img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    margin-left: 32px;
+    width: 100%;
+}
+
+.nameUser {
+    width: fit-content;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: white;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.nameUser:hover {
+    color: #f85555;
+    text-decoration: underline;
+}
+
+.follow {
+
+}
+
+.follow label {
+    font-size: 1.2rem;
+    color: white;
+    margin-left: 4px;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.infoStore {
+    list-style: none;
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.infoStore li {
+    cursor: pointer;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.infoData {
+    cursor: pointer;
+    padding-left: 8px;
+}
+
+.infoStore li label {
+    padding-left: 4px;
+    color: #f85555;
+    font-weight: 500;
+}
+
+

@@ -1,0 +1,72 @@
+
+.myStore {
+    height: 96px;
+    box-sizing: border-box;
+    margin-bottom: 64px;
+}
+
+.card {
+    /*height: 48px;*/
+    box-sizing: border-box;
+}
+
+.infoOfStore {
+    display: flex;
+    align-items: flex-start;
+}
+
+.infoOfStore img {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 100%;
+    cursor: pointer;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.info {
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: fit-content;
+    margin: 8px 4px;
+}
+
+.name:hover {
+    text-decoration: underline;
+    color: #f85555;
+}
+
+.listBtn {
+    display: flex;
+    align-items: center;
+}
+
+.listBtn button {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.storeData {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    justify-content: space-between;
+    margin: 0 16px;
+}
+
+.storeData label {
+    color: gray;
+    margin: 8px 6px;
+}
+
+.number {
+    color: #f85555;
+    font-weight: 500;
+}

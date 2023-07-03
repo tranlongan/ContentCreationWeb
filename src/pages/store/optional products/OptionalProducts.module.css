@@ -1,0 +1,80 @@
+.products {
+
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    cursor: pointer;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    margin: 8px 0 8px 0;
+}
+
+.card:hover {
+    animation: dropShadow linear 0.3s forwards;
+}
+
+@keyframes dropShadow {
+    from {
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+    to {
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    }
+}
+
+.header {
+
+}
+
+.header img {
+    width: 100%;
+    height: 291px;
+    object-fit: cover;
+}
+
+.infoProduct {
+    padding: 0 4px;
+}
+
+.title {
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: fit-content;
+    padding: 4px;
+}
+
+.price {
+    color: #f85555;
+    padding: 16px 4px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+
+.footer {
+    padding: 4px;
+}
+
+.evaluate {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    height: 13px;
+    padding: 4px;
+}
+
+.iconEvaluate i {
+    padding-right: 2px;
+    /*color: #ffce3d;*/
+    color: gray;
+}
+
+.sold {
+    margin-left: 4px;
+    font-size: 1.4rem;
+}
+

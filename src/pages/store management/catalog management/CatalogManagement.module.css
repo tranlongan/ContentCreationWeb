@@ -1,0 +1,41 @@
+.catalogManagement {
+    position: fixed;
+    left: 376px;
+    right: 6px;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+.tableCatalog {
+    font-size: 2rem;
+    border: 1px solid #7e633b;
+    width: 100%;
+}
+
+.tableCatalog tr th:first-child, .tableCatalog tr td:first-child {
+    width: 80px;
+    box-sizing: border-box;
+    padding: 8px;
+    text-align: center;
+}
+
+.tableCatalog tr th, .tableCatalog tr td {
+    padding: 16px;
+    border: 1px solid #7e633b;
+    text-align: left;
+}
+
+.tableCatalog tr th:last-child{
+    width: 96px;
+    box-sizing: border-box;
+}
+
+.tableCatalog tr td:last-child {
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.tableCatalog tr td:last-child i{
+    cursor: pointer;
+}

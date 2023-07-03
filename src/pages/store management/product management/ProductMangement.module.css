@@ -1,0 +1,9 @@
+.productManagement{
+    position: fixed;
+    left: 382px;
+    right: 0;
+    overflow-y: auto;
+    /*overflow-x: hidden;*/
+    max-height: 100%;
+}
+

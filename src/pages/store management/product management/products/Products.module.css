@@ -1,0 +1,201 @@
+.products {
+    width: 99%;
+}
+
+.navList {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.navList select {
+    margin: 0 16px;
+    padding: 8px;
+}
+
+.card {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 8px 0 8px 0;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    animation: dropShadow linear 0.3s forwards;
+}
+
+@keyframes dropShadow {
+    from {
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+    to {
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    }
+}
+
+.header {
+}
+
+.header img {
+    width: 100%;
+    height: 264px;
+    object-fit: cover;
+}
+
+.infoProduct {
+    padding: 0 4px;
+}
+
+.title {
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: fit-content;
+    padding: 4px;
+}
+
+.price {
+    padding: 0 4px;
+}
+
+.footer {
+    position: relative;
+    padding: 4px;
+}
+
+.category {
+    padding: 4px;
+}
+
+.evaluate {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    height: 13px;
+    padding: 4px;
+}
+
+.iconEvaluate i {
+    padding-right: 2px;
+    /*color: #ffce3d;*/
+    color: gray;
+}
+
+.sold {
+    margin-left: 4px;
+    font-size: 1.4rem;
+}
+
+.editProduct {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.modalAddProduct {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.coating {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: white;
+    width: 72%;
+    height: 580px;
+    border-radius: 4px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.exitForm {
+    font-size: 4rem;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    z-index: 3;
+    cursor: pointer;
+    width: fit-content;
+    color: #f85555;
+}
+
+.modal {
+    width: 64%;
+    max-height: 640px;
+    background: white;
+    margin: auto;
+    overflow-y: auto;
+    border-radius: 2px;
+    /*animation: zoom ease-in-out 1s forwards;*/
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.titleModal {
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 16px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.illustration, .imgDescribe, .optionsProduct {
+    display: flex;
+    align-items: center;
+}
+
+.illustration label, .imgDescribe label {
+    font-size: 1.6rem;
+    font-weight: 400;
+    width: 200px;
+}
+
+.titleArticle input, .illustration input, .price input, .inputDescribeProducts input, .imgDescribe input,
+.quantity input, .optionsProduct input, .storeCategories select {
+    width: 100%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    font-size: 2rem;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 4px 0;
+}
+
+.imgDescribeProducts, .btnAddOption {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btnPost button {
+    width: 100%;
+}
+
+@keyframes zoom {
+    from {
+        width: 30%;
+        max-height: 200px;
+    }
+    to {
+        width: 64%;
+        max-height: 640px;
+    }
+}
+
+
+

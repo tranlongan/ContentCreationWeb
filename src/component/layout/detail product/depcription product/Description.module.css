@@ -1,0 +1,14 @@
+.description {
+
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 48px 0 ;
+}
+
+.content{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}

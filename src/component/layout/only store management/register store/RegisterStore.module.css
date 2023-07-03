@@ -1,0 +1,95 @@
+.coating {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+
+.card {
+    margin: auto;
+    position: relative;
+    width: 500px;
+    min-height: 300px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 8px;
+    line-height: 3rem;
+    padding: 32px;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 8px 0;
+    margin: 16px 0;
+}
+
+.divInput {
+    padding: 4px 0;
+    margin: 4px 0;
+}
+
+.nameStore, .citizenId, .description, .category {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.listInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listInput input + input {
+    margin: 0 4px;
+}
+
+.nameStore input, .citizenId input, .description textarea, .category select {
+    line-height: 3rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 8px 0;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.description textarea {
+    height: 32px;
+    line-height: 2rem;
+    border: none;
+}
+
+.countWord {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 0.8rem;
+    padding: 4px;
+}
+
+.btnRegister {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btnRegister button {
+    background-color: #f85555;
+    min-width: 96px;
+    padding: 16px;
+}
+
+.btnRegister button:hover {
+    background-color: rgba(248, 85, 85, 0.9);
+}
+
+.btnRegister button i {
+    color: white;
+    font-size: 3.5rem;
+}
